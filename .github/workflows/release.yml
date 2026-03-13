@@ -3,6 +3,7 @@ name: Go-Release
 # 触发条件配置
 on:
   push:
+    workflow_dispatch:
     # 针对 master 分支的普通提交也触发
     branches:
       - "master"
