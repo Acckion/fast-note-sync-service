@@ -256,7 +256,7 @@ jobs:
         uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           dockerfile: docker/Dockerfile
-          name: acckion
+          name: acckion/${{ env.NAME }}
           username: acckion
           password: ${{ secrets.DOCKERHUB_TOKEN }}
           platforms: linux/amd64,linux/arm64
